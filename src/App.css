@@ -1,38 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+}
+
+.Top-header {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 1rem;
+  background-color: #77a8e1;
+  width: 100%;
+  height: 4rem;
+  box-sizing: border-box;
+}
+
+.HText {
+  font-size: 16pt;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.HText2 {
+  font-size: 14pt;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.Body {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-grow: 1;
+  height: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #77a8e1;
+  background: #77a8e166;
+  border: 5px solid #77a8e1;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+
+.Timer-text {
+  font-size: 60pt;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+.Buttons {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47%;
+  padding: 1rem 2rem;
+  border: 5px solid;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.Button-text {
+  font-size: 22pt;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  user-select: none;
+}
+
+.Start {
+  background: #77e1a866;
+  border-color: #77e1a8ff;
+}
+
+.Stop {
+  background-color: #e1777d66;
+  border-color: #e1777dff;
 }
